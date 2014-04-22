@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              xmlns:custom="http://schemas.android.com/apk/res/com.gracecode.android"
+              android:orientation="vertical"
+              android:layout_width="fill_parent"
+              android:layout_height="fill_parent"
+        >
+
+    <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="100dp">
+
+        <com.gracecode.android.ui.widget.RadioSeekBar
+                android:id="@+id/seekbar"
+                android:background="@android:color/holo_blue_bright"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                custom:max="540"
+                custom:progress="300"
+                custom:step="30"
+                />
+
+        <View
+                android:alpha="50"
+                android:layout_height="fill_parent"
+                android:layout_width="2dp"
+                android:background="@android:color/holo_red_dark"
+                android:layout_centerHorizontal="true"
+                />
+    </RelativeLayout>
+
+
+    <TextView
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:gravity="center"
+            android:padding="10dip"
+            android:id="@+id/status"/>
+
+    <Button
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/random_jump"
+            android:text="Random Jump!"/>
+</LinearLayout>
+
